@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Linq;
@@ -33,6 +33,33 @@ namespace TelaLogin
                 throw new Exception("Erro ao gravar: " + ex.Message);
             }
         }
+        public Usuario buscarLoginUsuario(string email, string senha)
+        {
+            Banco bb;
+            Usuario obj = null;
+            try
+            {
+                bb = new Banco();
+                bb.comando.CommandText = "Select nome from TB_USUARIO where email like @e and senha like @s";
+                bb.comando.Parameters.Add("@e", SqlDbType.VarChar, 40).Value = "%" + email.Trim() + "%";
+                bb.comando.Parameters.Add("@s", SqlDbType.VarChar, 20).Value = senha.Trim();
+                bb.comando.Prepare();
+                bb.dreader = bb.comando.ExecuteReader();
+
+                if (bb.dreader.Read())
+                {
+                    obj = new Usuario();
+                    obj.setNome(bb.dreader[0].ToString());
+                }
+                Banco.conexao.Close();
+                return (obj);
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Erro na busca por parte do nome: " + ex.Message);
+            }
+        }
+
         /*
         public int gravarGetCodigo(Usuario obj)
         {
@@ -146,25 +173,6 @@ namespace TelaLogin
             }
         }
 
-        public DataTable buscarParteNome(string pNome)
-        {
-            Banco bb;
-            try
-            {
-                bb = new Banco();
-                bb.comando.CommandText = "Select codigo,nome,idade from Usuario where nome ilike @pn";
-                bb.comando.Parameters.Add("@pn", SqlDbType.VarChar).Value = "%" + pNome.Trim() + "%";
-                bb.comando.Prepare();
-                bb.dreader = bb.comando.ExecuteReader();
-                bb.tabela = new DataTable();
-                bb.tabela.Load(bb.dreader);
-                Banco.conexao.Close();
-                return (bb.tabela);
-            }
-            catch (Exception ex)
-            {
-                throw new Exception("Erro na busca por parte do nome: " + ex.Message);
-            }
-        }*/
+        */
     }
 }
