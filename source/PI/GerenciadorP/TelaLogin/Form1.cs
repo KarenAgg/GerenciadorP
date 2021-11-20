@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -151,12 +151,6 @@ namespace TelaLogin
 
         // Visibilidade dos painéis
 
-        private void btentrar_Click(object sender, EventArgs e) // Esconde o Painel de cadastro e mantém o e Login visível (botão entrar).
-        {
-            pcadastro.Visible = false;
-            animacad.HideSync(pcadastro);
-        }
-
         private void lblcadastro_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e) // Esconde o Painel de Login e mantém o de Cadastro visível (link cadastre-se).
         {
             pcadastro.Visible = true;
@@ -252,6 +246,46 @@ namespace TelaLogin
             }
             
         }
+
+        private void btcadastro_Click(object sender, EventArgs e)
+        {
+            Usuario obj;
+            UsuarioDAO objDAO;
+            int qtde = 0;
+            obj = new Usuario();
+
+            obj.setNome(txtnome.Text);
+            obj.setEmail(txtemailcad.Text);
+            obj.setSenha(txtsenhacad.Text);
+            obj.setCargo(txtcargo.Text);
+            obj.setTelefone(txtrecup.Text);
+            obj.setPermissao(0);
+
+            MessageBox.Show("Nome: "+obj.nome);
+            MessageBox.Show("Email: "+obj.email);
+            MessageBox.Show("Senha: "+obj.senha);
+            MessageBox.Show("Cargo: "+obj.cargo.ToString());
+            MessageBox.Show("Telefone: "+obj.telefone);
+            MessageBox.Show("Permissão: "+obj.permissao.ToString());
+
+            objDAO = new UsuarioDAO();
+
+            qtde = objDAO.gravar(obj);
+
+            MessageBox.Show(qtde + " registros salvos com sucesso!");
+        }
+
+        private void btentrar_Click(object sender, EventArgs e)
+        {
+            UsuarioDAO objDAO = new UsuarioDAO();
+            Usuario obj = new Usuario();
+
+            obj = objDAO.buscarLoginUsuario(txtemail.Text, txtsenha.Text);
+
+            if (obj != null)
+                MessageBox.Show(obj.nome+", seja bem-vindo!");
+            else
+                MessageBox.Show("E-mail e/ou senha inválidos");
+        }
     }
 }
-
