@@ -28,8 +28,8 @@ namespace TelaLogin
             try
             {
                 if ((conexao == null) || (conexao.State != ConnectionState.Open))
-                {
-                    conexao = new SqlConnection("Data Source=" + "DESKTOP-JTIQ6F4\\SQL_PI" + ";Initial Catalog = "+"Gerenciador_P"+"; User ID = "+"sa"+"; Password = "+"projeto"+"");
+                {                                            //Mudar o nome do seu PC//
+                    conexao = new SqlConnection("Data Source=" + "DESKTOP-JTIQ6F4" + "\\SQL_PI" + ";Initial Catalog = "+"Gerenciador_P"+"; User ID = "+"sa"+"; Password = "+"projeto"+"");
                     conexao.Open();
                 }
                 comando = new SqlCommand();
