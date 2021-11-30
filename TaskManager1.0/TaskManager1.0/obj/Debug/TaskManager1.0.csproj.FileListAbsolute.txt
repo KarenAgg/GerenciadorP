@@ -1,0 +1,16 @@
+C:\Users\lucas\source\repos\TaskManager1.0\TaskManager1.0\bin\Debug\TaskManager1.0.exe.config
+C:\Users\lucas\source\repos\TaskManager1.0\TaskManager1.0\bin\Debug\TaskManager1.0.exe
+C:\Users\lucas\source\repos\TaskManager1.0\TaskManager1.0\bin\Debug\TaskManager1.0.pdb
+C:\Users\lucas\source\repos\TaskManager1.0\TaskManager1.0\obj\Debug\TaskManager1.0.csproj.AssemblyReference.cache
+C:\Users\lucas\source\repos\TaskManager1.0\TaskManager1.0\obj\Debug\TaskManager1._0.Form1.resources
+C:\Users\lucas\source\repos\TaskManager1.0\TaskManager1.0\obj\Debug\TaskManager1._0.frmCadFuncionario.resources
+C:\Users\lucas\source\repos\TaskManager1.0\TaskManager1.0\obj\Debug\TaskManager1._0.Properties.Resources.resources
+C:\Users\lucas\source\repos\TaskManager1.0\TaskManager1.0\obj\Debug\TaskManager1.0.csproj.GenerateResource.cache
+C:\Users\lucas\source\repos\TaskManager1.0\TaskManager1.0\obj\Debug\TaskManager1.0.csproj.CoreCompileInputs.cache
+C:\Users\lucas\source\repos\TaskManager1.0\TaskManager1.0\obj\Debug\TaskManager1.0.exe
+C:\Users\lucas\source\repos\TaskManager1.0\TaskManager1.0\obj\Debug\TaskManager1.0.pdb
+C:\Users\lucas\source\repos\TaskManager1.0\TaskManager1.0\obj\Debug\TaskManager1._0.frmCadTarefa.resources
+C:\Users\lucas\source\repos\TaskManager1.0\TaskManager1.0\obj\Debug\TaskManager1._0.frmCadProjeto.resources
+C:\Users\lucas\source\repos\TaskManager1.0\TaskManager1.0\obj\Debug\TaskManager1._0.frmLocalizarFuncionario.resources
+C:\Users\lucas\source\repos\TaskManager1.0\TaskManager1.0\obj\Debug\TaskManager1._0.frmLocalizarFuncAnged.resources
+C:\Users\lucas\source\repos\TaskManager1.0\TaskManager1.0\obj\Debug\TaskManager1._0.FrmLogin.resources

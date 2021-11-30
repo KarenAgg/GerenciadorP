@@ -1,0 +1,10 @@
+C:\Users\lucas\source\repos\TaskManager1.0\Info.DAL\bin\Debug\netcoreapp3.1\Info.DAL.deps.json
+C:\Users\lucas\source\repos\TaskManager1.0\Info.DAL\bin\Debug\netcoreapp3.1\Info.DAL.dll
+C:\Users\lucas\source\repos\TaskManager1.0\Info.DAL\bin\Debug\netcoreapp3.1\Info.DAL.pdb
+C:\Users\lucas\source\repos\TaskManager1.0\Info.DAL\obj\Debug\netcoreapp3.1\Info.DAL.csproj.AssemblyReference.cache
+C:\Users\lucas\source\repos\TaskManager1.0\Info.DAL\obj\Debug\netcoreapp3.1\Info.DAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\lucas\source\repos\TaskManager1.0\Info.DAL\obj\Debug\netcoreapp3.1\Info.DAL.AssemblyInfoInputs.cache
+C:\Users\lucas\source\repos\TaskManager1.0\Info.DAL\obj\Debug\netcoreapp3.1\Info.DAL.AssemblyInfo.cs
+C:\Users\lucas\source\repos\TaskManager1.0\Info.DAL\obj\Debug\netcoreapp3.1\Info.DAL.csproj.CoreCompileInputs.cache
+C:\Users\lucas\source\repos\TaskManager1.0\Info.DAL\obj\Debug\netcoreapp3.1\Info.DAL.dll
+C:\Users\lucas\source\repos\TaskManager1.0\Info.DAL\obj\Debug\netcoreapp3.1\Info.DAL.pdb
